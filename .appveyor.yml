@@ -3,14 +3,9 @@ version: '{branch}-{build}'
 environment:
   matrix:
     - QTDIR: C:\Qt\5.7\mingw53_32
-    - QTDIR: C:\Qt\5.7\msvc2013
-    - QTDIR: C:\Qt\5.7\msvc2013_64
-    - QTDIR: C:\Qt\5.7\msvc2015
-    - QTDIR: C:\Qt\5.7\msvc2015_64
 
 configuration:
   - debug
-  - release
 
 install:
   - '%QTDIR%\bin\qtenv2.bat'
